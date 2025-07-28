@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/root"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <!-- 你的页面主体内容 -->
+    <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="页面内容在这里（随便放些控件做背景）"
+            android:layout_gravity="center"
+            android:textSize="18sp" />
+
+    <!-- 浮动面板 -->
+    <LinearLayout
+            android:id="@+id/floatingPanel"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:background="@drawable/bg_floating_panel"
+            android:orientation="vertical"
+            android:elevation="16dp"
+            android:padding="0dp">
+
+        <TextView
+                android:id="@+id/panelHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="浮动信息面板"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                 />
+
+        <LinearLayout
+                android:id="@+id/panelBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="页面加载完成"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="10sp" />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/floating_panel_info"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="10sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

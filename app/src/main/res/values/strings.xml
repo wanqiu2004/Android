@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Android</string>
+    <string name="floating_panel_info">\n
+    1，标题事件的响应如：点击标题双击标题\n
+    2，滚动列表：结合我们的rv响应事件\n
+    3，添加按钮实现事件响应\n
+    4，是否吸附边缘\n
+    5，富文本的支持\n
+    6，显示图片
+    </string>
+    <string name="sensitive_tip">警告：该内容被推文作者标记为敏感，是否继续查看？</string>
+    <string name="sensitive_show">显示</string>
+    <string name="sensitive_hide">隐藏</string>
+</resources>

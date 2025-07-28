@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent">
+
+        <!-- 真正内容（默认隐藏） -->
+        <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/scv_real_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:visibility="invisible"
+                app:shapeAppearanceOverlay="@style/RoundedImageView"
+                android:contentDescription="真实敏感内容" />
+
+        <!-- 遮罩层 -->
+        <FrameLayout
+                android:id="@+id/scv_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent">
+
+            <!-- 占位符 -->
+            <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/scv_placeholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/RoundedImageView"
+                    android:contentDescription="敏感内容占位图像" />
+
+            <!-- 覆盖在占位符上的文本和按钮 -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="24dp"
+                    android:background="@android:color/transparent">
+
+                <TextView
+                        android:id="@+id/scv_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:padding="8dp"
+                        android:layout_marginBottom="12dp"
+                        android:contentDescription="敏感内容提示" />
+
+                <com.google.android.material.button.MaterialButton
+                        android:id="@+id/scv_toggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:text="显示"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textAllCaps="false"
+                        android:contentDescription="显示敏感内容" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </FrameLayout>
+</merge>

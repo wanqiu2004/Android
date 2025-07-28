@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardview_light_background">
+
+    <!-- 标题栏 -->
+    <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            style="@style/AcmeToolbarStyle"
+            android:title="Acme Console"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@android:color/white"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <!-- 内容区域 -->
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:padding="8dp">
+
+        <!-- RecyclerView：主内容列表 -->
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="16dp"
+                android:scrollbars="vertical"/>
+
+        <!-- 右侧字母索引栏 -->
+        <ch.cloudns.wanqiu.android.AlphabetIndexView
+                android:id="@+id/alphabetIndex"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end|center_vertical"
+                android:padding="4dp"
+                android:background="@drawable/bg_index_bar"/>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

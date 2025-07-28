@@ -1,0 +1,7 @@
+<resources>
+    <declare-styleable name="SensitiveContentView">
+        <attr name="scv_tipText" format="string"/>
+        <attr name="scv_showText" format="string"/>
+        <attr name="scv_hideText" format="string"/>
+    </declare-styleable>
+</resources>
