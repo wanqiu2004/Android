@@ -3,6 +3,7 @@
           xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
     <application
             android:allowBackup="true"
@@ -14,11 +15,25 @@
             android:theme="@style/Theme.Android"
             tools:targetApi="31">
         <activity
-                android:name=".KonfettiActivity"
+                android:name=".DeveloperMainActivity"
                 android:exported="false"/>
         <activity
-                android:name=".AlphabetIndexView"
+                android:name=".Broadcast"
                 android:exported="false"/>
+        <activity
+                android:name=".BroadcastDemoActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".TextSwitcher_BroadcastActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".BiometricPromptTest"
+                android:exported="false"/>
+        <activity
+                android:name=".KonfettiActivity"
+                android:exported="false"/> <!-- <activity -->
+        <!-- android:name=".AlphabetIndexView" -->
+        <!-- android:exported="false"/> -->
         <activity
                 android:name=".AcmeConsoleActivity"
                 android:exported="false"/>

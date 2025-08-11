@@ -43,7 +43,37 @@ public class MainActivity extends AppCompatActivity {
 
     container.addView(
             ViewUtils.newPrimaryButton(
-                    this, "Konfetti", v -> startActivity(new Intent(this, KonfettiActivity.class))),
+                    this, "Konfetti", v -> startActivity(new Intent(this, BiometricPromptTest.class))),
             lp);
+
+    container.addView(
+            ViewUtils.newPrimaryButton(
+                    this, "BiometricPromptTest", v -> startActivity(new Intent(this, BiometricPromptTest.class))),
+            lp);
+
+    container.addView(
+            ViewUtils.newPrimaryButton(
+                    this, "Overlay", v -> startActivity(new Intent(this, FloatingButtonActivity.class))),
+            lp);
+
+    container.addView(
+            ViewUtils.newPrimaryButton(
+                    this, "TextSwitcher_BroadcastActivity", v -> startActivity(new Intent(this, TextSwitcher_BroadcastActivity.class))),
+            lp);
+
+    container.addView(
+            ViewUtils.newPrimaryButton(
+                    this, "BroadcastActivity", v -> startActivity(new Intent(this, BroadcastDemoActivity.class))),
+            lp);
+
+    container.addView(
+            ViewUtils.newPrimaryButton(
+                    this, "Broadcast", v -> startActivity(new Intent(this, Broadcast.class))),
+            lp);
+    container.addView(
+            ViewUtils.newPrimaryButton(
+                    this, "DeveloperMainActivity", v -> startActivity(new Intent(this, DeveloperMainActivity.class))),
+            lp);
+
   }
 }

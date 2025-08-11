@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!-- Small Top App Bar -->
+    <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+            app:title="开发者中心"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:titleTextColor="@android:color/white"
+            app:elevation="4dp"/>
+
+    <!-- 主内容区，填充屏幕 -->
+    <ScrollView
+            android:id="@+id/scrollViewContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:id="@+id/contentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <!-- 示例内容 -->
+            <TextView
+                    android:id="@+id/tvWelcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="欢迎来到开发者中心！"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="24dp"/>
+
+            <Button
+                    android:id="@+id/btnStartTutorial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="开始新手教程"
+                    android:layout_marginBottom="16dp"/>
+
+            <Button
+                    android:id="@+id/btnApiDocs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="查看API文档"
+                    android:layout_marginBottom="16dp"/>
+
+            <!-- 可继续添加更多开发者面向的功能按钮或信息 -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
