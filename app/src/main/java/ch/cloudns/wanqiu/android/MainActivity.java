@@ -42,38 +42,52 @@ public class MainActivity extends AppCompatActivity {
         lp);
 
     container.addView(
-            ViewUtils.newPrimaryButton(
-                    this, "Konfetti", v -> startActivity(new Intent(this, BiometricPromptTest.class))),
-            lp);
+        ViewUtils.newPrimaryButton(
+            this, "Konfetti", v -> startActivity(new Intent(this, BiometricPromptTest.class))),
+        lp);
 
     container.addView(
-            ViewUtils.newPrimaryButton(
-                    this, "BiometricPromptTest", v -> startActivity(new Intent(this, BiometricPromptTest.class))),
-            lp);
+        ViewUtils.newPrimaryButton(
+            this,
+            "BiometricPromptTest",
+            v -> startActivity(new Intent(this, BiometricPromptTest.class))),
+        lp);
 
     container.addView(
-            ViewUtils.newPrimaryButton(
-                    this, "Overlay", v -> startActivity(new Intent(this, FloatingButtonActivity.class))),
-            lp);
+        ViewUtils.newPrimaryButton(
+            this, "Overlay", v -> startActivity(new Intent(this, FloatingButtonActivity.class))),
+        lp);
 
     container.addView(
-            ViewUtils.newPrimaryButton(
-                    this, "TextSwitcher_BroadcastActivity", v -> startActivity(new Intent(this, TextSwitcher_BroadcastActivity.class))),
-            lp);
+        ViewUtils.newPrimaryButton(
+            this,
+            "TextSwitcher_BroadcastActivity",
+            v -> startActivity(new Intent(this, TextSwitcher_BroadcastActivity.class))),
+        lp);
 
     container.addView(
-            ViewUtils.newPrimaryButton(
-                    this, "BroadcastActivity", v -> startActivity(new Intent(this, BroadcastDemoActivity.class))),
-            lp);
+        ViewUtils.newPrimaryButton(
+            this,
+            "BroadcastActivity",
+            v -> startActivity(new Intent(this, BroadcastDemoActivity.class))),
+        lp);
 
     container.addView(
-            ViewUtils.newPrimaryButton(
-                    this, "Broadcast", v -> startActivity(new Intent(this, Broadcast.class))),
-            lp);
+        ViewUtils.newPrimaryButton(
+            this, "Broadcast", v -> startActivity(new Intent(this, Broadcast.class))),
+        lp);
     container.addView(
-            ViewUtils.newPrimaryButton(
-                    this, "DeveloperMainActivity", v -> startActivity(new Intent(this, DeveloperMainActivity.class))),
-            lp);
+        ViewUtils.newPrimaryButton(
+            this,
+            "ProgressIndicators",
+            v -> startActivity(new Intent(this, ProgressIndicators.class))),
+        lp);
 
+    container.addView(
+        ViewUtils.newPrimaryButton(
+            this,
+            "ImagePickerActivity",
+            v -> startActivity(new Intent(this, ImagePickerActivity.class))),
+        lp);
   }
 }

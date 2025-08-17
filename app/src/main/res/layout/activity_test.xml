@@ -9,6 +9,8 @@
         android:padding="24dp"
         tools:context=".Test">
 
+    <include layout="@layout/include_top_app_bar"/>
+
     <!-- 内容区：SensitiveContentView -->
     <ch.cloudns.wanqiu.android.SensitiveContentView
             android:id="@+id/sensitiveView"
@@ -19,7 +21,7 @@
             app:layout_constraintBottom_toTopOf="@id/toggle"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_percent="0.4" />
+            app:layout_constraintHeight_percent="0.4"/>
 
     <!-- 彩带层 KonfettiView，铺满 sensitiveView -->
     <nl.dionsegijn.konfetti.xml.KonfettiView
@@ -29,7 +31,7 @@
             app:layout_constraintTop_toTopOf="@id/sensitiveView"
             app:layout_constraintBottom_toBottomOf="@id/sensitiveView"
             app:layout_constraintStart_toStartOf="@id/sensitiveView"
-            app:layout_constraintEnd_toEndOf="@id/sensitiveView" />
+            app:layout_constraintEnd_toEndOf="@id/sensitiveView"/>
 
     <!-- 操作区按钮 -->
     <Button
@@ -44,6 +46,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="32dp" />
+            android:layout_marginBottom="32dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

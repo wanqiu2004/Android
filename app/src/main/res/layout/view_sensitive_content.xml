@@ -15,7 +15,7 @@
                 android:scaleType="centerCrop"
                 android:visibility="invisible"
                 app:shapeAppearanceOverlay="@style/RoundedImageView"
-                android:contentDescription="真实敏感内容" />
+                android:contentDescription="真实敏感内容"/>
 
         <!-- 遮罩层 -->
         <FrameLayout
@@ -31,7 +31,7 @@
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
                     app:shapeAppearanceOverlay="@style/RoundedImageView"
-                    android:contentDescription="敏感内容占位图像" />
+                    android:contentDescription="敏感内容占位图像"/>
 
             <!-- 覆盖在占位符上的文本和按钮 -->
             <LinearLayout
@@ -51,7 +51,7 @@
                         android:textStyle="bold"
                         android:padding="8dp"
                         android:layout_marginBottom="12dp"
-                        android:contentDescription="敏感内容提示" />
+                        android:contentDescription="敏感内容提示"/>
 
                 <com.google.android.material.button.MaterialButton
                         android:id="@+id/scv_toggle"
@@ -62,7 +62,7 @@
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:textAllCaps="false"
-                        android:contentDescription="显示敏感内容" />
+                        android:contentDescription="显示敏感内容"/>
 
             </LinearLayout>
         </FrameLayout>

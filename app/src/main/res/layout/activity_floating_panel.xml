@@ -11,7 +11,7 @@
             android:layout_height="wrap_content"
             android:text="页面内容在这里（随便放些控件做背景）"
             android:layout_gravity="center"
-            android:textSize="18sp" />
+            android:textSize="18sp"/>
 
     <!-- 浮动面板 -->
     <LinearLayout
@@ -35,7 +35,7 @@
                 android:text="浮动信息面板"
                 android:textColor="@android:color/black"
                 android:textStyle="bold"
-                 />
+                />
 
         <LinearLayout
                 android:id="@+id/panelBody"
@@ -49,14 +49,14 @@
                     android:layout_height="wrap_content"
                     android:text="页面加载完成"
                     android:textColor="@android:color/holo_blue_light"
-                    android:textSize="10sp" />
+                    android:textSize="10sp"/>
 
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/floating_panel_info"
                     android:textColor="@android:color/holo_blue_light"
-                    android:textSize="10sp" />
+                    android:textSize="10sp"/>
         </LinearLayout>
 
     </LinearLayout>

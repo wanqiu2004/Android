@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_root"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:layout_gravity="center"
+              android:padding="8dp">
+
+    <TextView
+            android:id="@+id/button_select_images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/md_theme_primary"
+            android:textStyle="bold"
+            android:textScaleX="1.0"
+            android:text="选择图片"/>
+
+    <EditText
+            android:id="@+id/search_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="搜索..."
+            android:textColor="#333333"
+            android:textColorHint="#999999"
+            android:textColorHighlight="#408888FF"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:selectAllOnFocus="true"
+            android:shadowColor="#40000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1.5"
+            />
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_image_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"/>
+
+</LinearLayout>

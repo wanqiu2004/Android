@@ -4,13 +4,11 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
-
 import nl.dionsegijn.konfetti.core.Angle;
 import nl.dionsegijn.konfetti.core.Party;
 import nl.dionsegijn.konfetti.core.Position;
 import nl.dionsegijn.konfetti.core.Rotation;
 import nl.dionsegijn.konfetti.core.emitter.Emitter;
-import nl.dionsegijn.konfetti.core.emitter.EmitterConfig;
 import nl.dionsegijn.konfetti.core.models.Shape;
 import nl.dionsegijn.konfetti.core.models.Size;
 import nl.dionsegijn.konfetti.xml.KonfettiView;
@@ -44,8 +42,10 @@ public class KonfettiActivity extends AppCompatActivity {
             new Emitter(2, TimeUnit.SECONDS).perSecond(30) // emitter 配置
             );
 
-    findViewById(R.id.start).setOnClickListener(
-            v -> { konfettiView.start(party); }
-    );
+    findViewById(R.id.start)
+        .setOnClickListener(
+            v -> {
+              konfettiView.start(party);
+            });
   }
 }

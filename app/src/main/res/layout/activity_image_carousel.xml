@@ -13,5 +13,5 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="从相册选择图片（可多选）"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
 </LinearLayout>

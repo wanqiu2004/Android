@@ -12,8 +12,20 @@
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
             android:supportsRtl="true"
-            android:theme="@style/Theme.Android"
+            android:theme="@style/AppTheme"
             tools:targetApi="31">
+        <activity
+                android:name=".ImagePreviewActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".ImagePickerActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".ProgressIndicators"
+                android:exported="false"/>
+        <activity
+                android:name=".Navigation"
+                android:exported="false"/>
         <activity
                 android:name=".DeveloperMainActivity"
                 android:exported="false"/>

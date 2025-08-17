@@ -17,7 +17,7 @@
             android:format24Hour="yyyy-MM-dd HH:mm:ss"
             android:textColor="#444444"
             android:textSize="20sp"
-            android:layout_marginBottom="20dp" />
+            android:layout_marginBottom="20dp"/>
 
     <!-- 广播提示标题 -->
     <TextView
@@ -27,7 +27,7 @@
             android:text="📢 机场广播提示："
             android:textSize="22sp"
             android:textColor="#1976D2"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp"/>
 
     <!-- 企业级广播框（带边框圆角的 LinearLayout） -->
     <LinearLayout
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:text="📢"
                 android:textSize="26sp"
-                android:layout_marginEnd="10dp" />
+                android:layout_marginEnd="10dp"/>
 
         <!-- 滚动文字 -->
         <TextSwitcher
@@ -55,7 +55,6 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"/>
-
 
 
     </LinearLayout>

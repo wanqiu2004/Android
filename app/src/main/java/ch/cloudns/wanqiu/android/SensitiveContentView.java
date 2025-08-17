@@ -8,7 +8,6 @@ import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -67,7 +66,10 @@ public class SensitiveContentView extends FrameLayout {
     tipText.setText(tip);
     toggleBtn.setText(showText);
 
-    toggleBtn.setOnClickListener(v -> {toggle() ;});
+    toggleBtn.setOnClickListener(
+        v -> {
+          toggle();
+        });
 
     // 初始为未显示真实内容
     applyState(false, false);

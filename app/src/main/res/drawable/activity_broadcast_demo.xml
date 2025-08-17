@@ -19,7 +19,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:paddingTop="20dp"
-            android:paddingBottom="20dp" />
+            android:paddingBottom="20dp"/>
 
     <!-- 标题 -->
     <TextView
@@ -54,7 +54,7 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:src="@drawable/broadcast"
-                android:tint="#1976D2" />
+                android:tint="#1976D2"/>
 
         <!-- 文字轮播 -->
         <TextSwitcher
@@ -62,7 +62,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"/>
     </LinearLayout>
 
     <!-- 其余内容，假设是ACME控制台 -->
