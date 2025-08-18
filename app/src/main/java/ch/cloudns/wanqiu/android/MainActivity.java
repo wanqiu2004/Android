@@ -3,6 +3,7 @@ package ch.cloudns.wanqiu.android;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.LinearLayout;
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -11,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-
+    EdgeToEdge.enable(this);
     LinearLayout container = findViewById(R.id.container);
     LinearLayout.LayoutParams lp = ViewUtils.wrapWithMargins(this, 18, 4);
 
@@ -89,5 +90,12 @@ public class MainActivity extends AppCompatActivity {
             "ImagePickerActivity",
             v -> startActivity(new Intent(this, ImagePickerActivity.class))),
         lp);
+
+    container.addView(
+            ViewUtils.newPrimaryButton(
+                    this,
+                    "ProgressDialogActivity",
+                    v -> startActivity(new Intent(this, ProgressDialogActivity.class))),
+            lp);
   }
 }
